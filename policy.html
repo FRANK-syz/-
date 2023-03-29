@@ -171,11 +171,12 @@ html,body{height: 100%;}
                         padding:0,
                         formatter:function(params){
                             var tipHtml = '';
-                            tipHtml = '<div style="height:90px;width:450px;border-radius:5px;background:#fff">' +
+                            tipHtml = '<div style="height:110px;width:450px;border-radius:5px;background:#fff">' +
                                       ' -1952年10月30日，毛泽东视察黄河,'+
                                       '<br> -在听取时任黄河水利委员会主任王化云关于引江济黄设想的汇报后，说：'+
                                       '<br> &nbsp"南方水多，北方水少，如有可能，借点水来也是可以的。"'+
 								 	  '<br> -这是第一次提出南水北调的宏伟设想。'+
+                                      '<br> /点击阅读南水北调工程总体简介/'+
                                       '</div>';
                             return tipHtml;
                         }
@@ -208,13 +209,14 @@ html,body{height: 100%;}
                         padding:0,
                         formatter:function(params){
                             var tipHtml = '';
-                            tipHtml = '<div style="height:170px;width:415px;border-radius:5px;background:#fff">' +
+                            tipHtml = '<div style="height:190px;width:415px;border-radius:5px;background:#fff">' +
                                       ' -东线利用江苏省已有的江水北调工程，借京杭大运河及与平行河道'+'<br> &nbsp逐级提水北送。'+
                                       '<br> -中线由丹江口大坝加高后扩容的丹江口水库调水，自流至北京。'+
                                       '<br> -西线在长江上游及其支流筑坝建库，开凿穿过长江黄河分水岭的'+'<br> &nbsp输水隧洞，调长江水入黄河上游。'+
                                       '<br> -通过三条调水线路与长江、黄河、淮河和海河四大江河的联系，'+
 							     	  '<br> &nbsp构成以“四横三纵”为主体的总体布局，以利于实现中国水资源'+
 									  '<br> &nbsp南北调配、东西互济的合理配置格局。'+
+                                      '<br> /点击阅读南水北调工程总体简介/'+
                                       '</div>';
                             return tipHtml;
                         }
@@ -247,10 +249,11 @@ html,body{height: 100%;}
                         padding:0,
                         formatter:function(params){
                             var tipHtml = '';
-                            tipHtml = '<div style="height:65px;width:390px;border-radius:5px;background:#fff">' +
+                            tipHtml = '<div style="height:85px;width:390px;border-radius:5px;background:#fff">' +
                                       '-2002年12月27日，时任国务院总理朱镕基在人民大会堂宣布：'+
                                       '<br>“南水北调工程开工”。同年，东线开工，起点三江口。'+
                                       '<br>-次年12月31日，中线开工，起点丹江口。'+
+                                      '<br> /点击阅读南水北调工程总体简介/'+
 									  '</div>';
                             return tipHtml;
                         }
@@ -284,9 +287,10 @@ html,body{height: 100%;}
                         padding:0,
                         formatter:function(params){
                             var tipHtml = '';
-                            tipHtml = '<div style="height:40px;width:350px;border-radius:5px;background:#fff">' +
+                            tipHtml = '<div style="height:65px;width:350px;border-radius:5px;background:#fff">' +
                                       '-2013年11月，东线一期工程通水，自扬州江都水利枢纽'+
                                       '<br>&nbsp取长江水，供水范围涉及江苏、安徽、山东三省。'+
+                                      '<br> /点击阅读南水北调工程总体简介/'+
                                       '</div>';
                             return tipHtml;
                         }
@@ -319,10 +323,11 @@ html,body{height: 100%;}
                         padding:0,
                         formatter:function(params){
                             var tipHtml = '';
-                            tipHtml = '<div style="height:65px;width:310px;border-radius:5px;background:#fff">' +
+                            tipHtml = '<div style="height:85px;width:310px;border-radius:5px;background:#fff">' +
                                       '-2013年，南水北调中线一期工程主体工程完工，'+
                                       '<br>-2014年12月，中线一期工程通水，从丹江口水库'+
-                                      '<br>&nbsp取汉江水，向河南、河北、北京、天津供水。'+                                   
+                                      '<br>&nbsp取汉江水，向河南、河北、北京、天津供水。'+     
+                                      '<br> /点击阅读南水北调工程总体简介/'+                              
                                       '</div>';
                             return tipHtml;
                         }
@@ -355,9 +360,10 @@ html,body{height: 100%;}
                         padding:0,
                         formatter:function(params){
                             var tipHtml = '';
-                            tipHtml = '<div style="height:45px;width:380px;border-radius:5px;background:#fff">' +
+                            tipHtml = '<div style="height:65px;width:380px;border-radius:5px;background:#fff">' +
                                       '-2022年12月12日，是南水北调工程全面通水8周年。'+
                                       '<br>&nbsp如今已累计向北方调水近565亿立方米，受益人口达1.5亿人。'+
+                                      '<br> /点击阅读南水北调工程总体简介/'+
                                       '</div>';
                             return tipHtml;
                         }
@@ -812,22 +818,22 @@ myChart.setOption(option);
 
 myChart.on('click', function(params) {
     if (params.name==="毛泽东首次提出南水北调思想") {
-        window.open('https://www.baidu.com' );
+        window.open('http://nsbd.mwr.gov.cn/zw/gcgk/' );
     }  
-    if (params.name==="确定南水北调东、中、西三条线路") {
-        window.open('https://www.baidu.com' );
+    else if (params.name==="确定南水北调东、中、西三条线路") {
+        window.open('http://nsbd.mwr.gov.cn/zw/gcgk/' );
     }
-    if (params.name==="南水北调工程开工") {
-        window.open('https://www.baidu.com' );
+    else if (params.name==="南水北调工程开工") {
+        window.open('http://nsbd.mwr.gov.cn/zw/gcgk/' );
     }
-    if (params.name==="南水北调东线工程正式通水") {
-        window.open('https://www.baidu.com' );
+    else if (params.name==="南水北调东线工程正式通水") {
+        window.open('http://nsbd.mwr.gov.cn/zw/gcgk/' );
     }
-    if (params.name==="南水北调中线工程正式通水") {
-        window.open('https://www.baidu.com' );
+    else if (params.name==="南水北调中线工程正式通水") {
+        window.open('http://nsbd.mwr.gov.cn/zw/gcgk/' );
     } 
-    if (params.name==="南水北调至今") {
-        window.open('https://www.baidu.com' );
+    else if (params.name==="南水北调至今") {
+        window.open('http://nsbd.mwr.gov.cn/zw/gcgk/' );
     }
 });
 
@@ -839,16 +845,16 @@ myChart.on('click', function(params) {
     if (params.name==="《南水北调工程总体规划》") {
         window.open('https://www.ndrc.gov.cn/xwdt/xwfb/200507/t20050708_958444.html' );
     }  
-    if (params.name==="《国务院南水北调工程建设委员会\n办公室主要职责内设机构和人员编制规定》") {
+    else if (params.name==="《国务院南水北调工程建设委员会\n办公室主要职责内设机构和人员编制规定》") {
         window.open('http://www.gov.cn/zhengce/content/2008-03/28/content_3043.htm' );
     }
-    if (params.name==="《南水北调工程供用水管理条例》") {
+    else if (params.name==="《南水北调工程供用水管理条例》") {
         window.open('http://www.gov.cn/zhengce/2014-02/28/content_2625853.htm' );
     }
-    if (params.name==="《南水北调工程基金筹集和使用管理办法》") {
+    else if (params.name==="《南水北调工程基金筹集和使用管理办法》") {
         window.open('http://www.gov.cn/zhengce/content/2008-03/28/content_3012.htm' );
     }
-    if (params.name==="《关于在南水北调工程全面\n推行河湖长制的实施方案》") {
+    else if (params.name==="《关于在南水北调工程全面\n推行河湖长制的实施方案》") {
         window.open('http://nsbd.mwr.gov.cn/zx/zxdt/202201/t20220130_1561132.html' );
     }
 });

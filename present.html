@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>我国水资源现状</title>
+<script type="text/javascript" src="js2/jquery.js"></script>
+<script type="text/javascript" src="js2/echarts.min.js"></script>
+<script type="text/javascript" src="js2/china.js"></script>
+<script type="text/javascript" src="js2/map.js"></script>
+<script type="text/javascript" src="js2/js.js"></script>
+<script type="text/javascript" src="js2/Bubble.js"></script>
+<link rel="stylesheet" href="css/style2.css">
+<style type="text/css">
+			@font-face {
+			  font-family: 'iconfont';
+			  src: url('font/iconfont.woff2?t=1651660703904') format('woff2'),
+			       url('font/iconfont.woff?t=1651660703904') format('woff'),
+			       url('font/iconfont.ttf?t=1651660703904') format('truetype');
+			}
+			.iconfont {
+			  font-family: "iconfont";
+			  font-size: 20px;
+			  font-style: normal;
+			  -webkit-font-smoothing: antialiased;
+			  -moz-osx-font-smoothing: grayscale;
+			}
+		</style>
+</head>
+<body>
+	<div class="head clearfix">
+
+
+	<h1 class="pulll_left">我 国 水 资 源 现 状</h1>
+		<div class="menu menu2 pulll_left">
+		<ul>      
+			<li><a href="index.html">
+			<span class="iconfont">&#xe648;</span>
+			</a>
+			</li>
+			<li><a href="TransWater.html">
+			<span class="iconfont">&#xe737;</span>
+			</a>
+			</li>
+			<li><a href="policy.html">
+			<span class="iconfont">&#xe62e;</span>
+			</a>
+			</li>
+			
+		</ul>
+		</div>
+		
+		<div class="time" id="showTime">2018/6/12 17:00:12</div>
+		<script>
+var t = null;
+    t = setTimeout(time,1000);//開始运行
+    function time()
+    {
+       clearTimeout(t);//清除定时器
+       dt = new Date();
+		var y=dt.getFullYear();
+		var mt=dt.getMonth()+1;
+		var day=dt.getDate();
+       var h=dt.getHours();//获取时
+       var m=dt.getMinutes();//获取分
+       var s=dt.getSeconds();//获取秒
+       document.getElementById("showTime").innerHTML = y+"/"+mt+"/"+day+" "+h+":"+m+":"+s+"";
+       t = setTimeout(time,1000); //设定定时器，循环运行     
+    } 
+
+</script>
+	</div>
+	<div class="mainbox">
+	
+	<ul class="clearfix nav1">
+		<li style="width: 20%" >
+		<div class="box">
+			<div class="tit">我国南北水资源分布</div>
+			<div class="mapnav3">
+			<ul >
+				<li ><div style="height:145px;"><span>北方水资源占比</span><p><n>19%</n></p></div></li>
+				<li ><div style="height:145px;"><span>南方水资源占比</span><p><n>81%</n></p></div></li>
+				</ul>
+			</div>
+			<div class="boxnav" style="height: 300px;">
+
+</table>
+			</div>
+			</div>
+			<div class="box">
+			<div class="tit">2019年我国河流水质单位类别比例</div>
+			<div class="boxnav" style="height: 250px;">
+				<div class="" style="height: 250px" id="echart1"></div>				
+			</div>
+			</div>
+		</li>
+		
+		
+		<li style="width: 60%">
+		
+		<div class="box">
+			<div class="boxnav mapc" style="height: 670px; position: relative">
+				<div class="mapnav">
+				<ul>
+					<li><div><span>大陆各省级行政区2020年人均水资源量</span><p>（单位：立方米/人）</p></div></li>
+					</ul>
+				</div>
+				<div class="mapnav2">
+				
+				<div class="box">
+			<div class="tit">21世纪来全国人均水资源量变化<br>（单位：立方米/人）</div>
+			<div class="boxnav" style="height: 130px;" id="sysx">
+				
+				
+				</div>
+					
+					
+					</div>
+				</div>
+			<div class="map" id="map"></div>
+				
+				<script>
+				$(".mapbtn a").hover(function(){
+					var ind=$(this).index()
+					$(".mapnav ul").eq(ind).show().siblings().hide()
+				})
+				</script>
+			</div>
+			</div>
+		
+		</li>
+		<li style="width: 20%">
+		
+		<div class="box">
+			<div class="tit">2018总水资源量top10地区</div>
+			<div class="boxnav" id="echart3" style="height: 300px;">
+			
+			</div>
+			</div>
+			<div class="box">
+			<div class="tit">水资源热词</div>
+			<div class="boxnav" style="height: 272px;">
+				<div style="height: 350px; float: left; width: 100%; padding: 0 5px;">
+				
+			
+				
+
+    <div class="tagcloud">
+      <!-- bo大小 co颜色 -->
+      <a class="b01 co01" href="#">开源</a>
+      <a class="b02 co02" href="#">节流</a>
+      <a class="b03 co03" href="#">南水北调</a>
+      <a class="b04 co04" href="#">水质下降</a>
+      <a class="b05 co05" href="#">水资源短缺</a>	  
+	  <a class="b06 co06" href="#">水污染</a>
+    </div>
+<script type="text/javascript">
+    /*3D标签云*/
+    tagcloud({
+        selector: ".tagcloud",  //元素选择器
+        fontsize: 6,       //基本字体大小, 单位px
+        radius: 40,         //滚动半径, 单位px 页面宽度和高度的五分之一
+        mspeed: "slow",   //滚动最大速度, 取值: slow, normal(默认), fast
+        ispeed: "slow",   //滚动初速度, 取值: slow, normal(默认), fast
+        direction: 0,     //初始滚动方向, 取值角度(顺时针360): 0对应top, 90对应left, 135对应right-bottom(默认)...
+        keep: false          //鼠标移出组件后是否继续随鼠标滚动, 取值: false, true(默认) 对应 减速至初速度滚动, 随鼠标滚动
+    });
+</script>
+				</div>
+			</div>
+			</div>
+		
+		</li>
+		</ul>
+		
+		
+		
+	</div>
+</body>
+</html>
